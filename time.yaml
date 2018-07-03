@@ -1,0 +1,12 @@
+- hosts: NTP
+- name: Configer Timezone
+
+  hosts: NTP
+
+  tasks:
+
+    - name: Update Timezone to Etc/UTC
+      timezone:
+        name: Etc/UTC
+      become: yes
+      become_method: sudo
